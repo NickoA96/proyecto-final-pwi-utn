@@ -13,10 +13,10 @@ const PORT = process.env.PORT || 8080;
 
 // Conexion a base de Datos
 const conexion = mysql.createConnection({
-    host: "us-cdbr-east-06.cleardb.net",
-    user: "b2dc4a95243a34",
-    password: "a7e2cc3d",
-    database: "heroku_1b33d1b59be4649"
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 })
 
 
@@ -67,7 +67,7 @@ app.get('/socios', (req, res, next) => {
 
 app.get('/registrados', (req, res, next) => {
     
-    let sql = 'SELECT * FROM heroku_1b33d1b59be4649.socios ';
+    let sql = 'SELECT * FROM socios ';
 
     conexion.query(sql,  (err, result) => {
         if (err) throw err;
@@ -210,7 +210,7 @@ app.post('/ind', (req, res, next) => {
         
         const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
     
-        conexion.query('INSERT INTO heroku_1b33d1b59be4649.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
+        conexion.query('INSERT INTO socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
         (error, results) => {
                 if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
                     let validacion2  = 'Rellene los campos obligatorios (*)';
@@ -257,9 +257,8 @@ app.post('/ind', (req, res, next) => {
                 envioMail2();
             }
         });
-    } );
-
-
+    });
+    
     
 
 app.listen(PORT, () => {
