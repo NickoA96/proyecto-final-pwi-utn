@@ -1,0 +1,153 @@
+
+                
+                        
+
+<section id="socios" >
+
+    <div class="container">
+
+        <div class="text-white fw-bold">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-warning text-decoration-underline">¿Qué es
+                        ser socio?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">Ser socio de Boca Juniors es una forma de estar
+                        cerca de tu club, de vivir el fútbol y de disfrutar de los
+                        beneficios que te ofrece la institución. Además, es una forma de
+                        colaborar con el club para que siga creciendo y siga siendo el más
+                        grande de la Argentina.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-warning text-decoration-underline">¿Cómo
+                        ser socio?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">Para ser socio de Boca Juniors, tenés que
+                        completar el formulario de inscripción y abonar la cuota
+                        correspondiente. Podés hacerlo en cualquiera de las oficinas de la
+                        institución o en las sucursales de Banco Galicia.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center text-warning text-decoration-underline">¿Cuáles
+                        son los beneficios de ser socio?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">Los socios de Boca Juniors tienen acceso a una
+                        serie de beneficios que los hacen sentir parte de la institución.
+                        Entre ellos, se destacan:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>Descuentos en la compra de productos oficiales de Boca Juniors.</li>
+                        <li>Descuentos en la compra de entradas para los partidos de Boca
+                            Juniors.</li>
+                        <li>Descuentos en la compra de entradas para los partidos de la
+                            Selección Argentina.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="row text-white  fw-bold">
+            <form action="./socios" id="formu" method="post" >
+
+                <div class="mb-3 row">
+                    <label for="nombre" class="col-sm-2 col-form-label">Nombre : * </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="apellido" class="col-sm-2 col-form-label">Apellido : *</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="apellido" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="dni" class="col-sm-2 col-form-label">DNI : * </label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="dni" id="dni" placeholder="Dni" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="celular" class="col-sm-2 col-form-label">Celular : * </label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="celular" id="celular" placeholder="Celular" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="provincia" class="col-sm-2 col-form-label">Provincia : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="provincia" id="provincia"
+                            placeholder="Provincia" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="ciudad" class="col-sm-2 col-form-label">Ciudad : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ciudad" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="cp" class="col-sm-2 col-form-label">Codigo Postal : </label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="cp" id="cp" placeholder="Codigo Postal" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="pais" class="col-sm-2 col-form-label">Pais : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pais" id="pais" placeholder="Pais" />
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-2 col-form-label"> Email : * </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email" />
+                    </div>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <input type="submit" class="button btn btn-warning  w-50 p-2 text-primary fw-bold "  value="Enviar Datos" />
+                    </div>
+                <div class=" text-danger ">
+                    {{validacion2}}
+                </div>
+
+                <div id="confir" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                    {{confirmacion2}}
+            
+
+               
+                </div>
+
+                
+            </form>
+
+        </div>
+    </div>
+</section>

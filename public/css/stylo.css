@@ -1,0 +1,111 @@
+nav{
+    background-image: linear-gradient(to bottom, #001369, #03257f, #053795, #044aab, #005dc2);
+}
+
+
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+#principal p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    
+}
+
+
+#principal h1{
+    color: whitesmoke;
+}
+
+
+#principal{
+    background-image: linear-gradient(to bottom, #001369, #03257f, #053795, #044aab, #005dc2);
+}
+
+
+
+
+
+
+footer{
+    background-image: linear-gradient(to bottom, #001369, #03257f, #053795, #044aab, #005dc2);
+    color: black;
+
+}
+
+
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    background-image: url("../media/ban.jpg");
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    color: #fff;
+}
+
+.subs{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+#subscripcion{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+
+#socios, #regist{
+    background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt09b9ee2a92df2221/63166fae57f95c7139a90d70/GettyImages-1242789403.jpg);
+}
+
+#formu{
+   
+    background-image: url(https://www.bocajuniors.com.ar/upload/images/thumbs/be/ne/820x412beneficiate-bannerweb-conlogo-1_d895a.jpg);
+    border-radius: 1%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+} 
+

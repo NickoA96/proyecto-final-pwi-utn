@@ -1,0 +1,53 @@
+
+
+
+
+<section class="bg-warning">
+
+<div class="container text-center bg-warning text-primary ">
+
+    <h3 >
+        Listado de Usuarios Registrados
+    </h3>
+
+</div>
+<table class="table table-dark table-striped mb-5 ">
+    <thead>
+        <th>Numero De Socio</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Dni</th>
+        <th>Celular</th>
+        <th>Provincia</th>
+        <th>Ciudad</th>
+        <th>Codigo Postal</th>
+        <th>Pais</th>
+        <th>Email</th>
+
+    </thead>
+    <tbody>
+        {{#each result}}
+        <tr>
+            <td>{{idSocio}}</td>
+            <td>{{nombre}}</td>
+            <td>{{apellido}}</td>
+            <td>{{dni}}</td>
+            <td>{{celular}}</td>
+            <td>{{provincia}}</td>
+            <td>{{ciudad}}</td>
+            <td>{{cp}}</td>
+            <td>{{pais}}</td>
+            <td>{{email}}</td>
+            
+        </tr>
+    </tbody>
+    {{/each}}
+
+</table>
+
+
+</div>
+
+</section>
+
+{{> suscribirse}}
