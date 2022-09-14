@@ -67,7 +67,7 @@ app.get('/socios', (req, res, next) => {
 
 app.get('/registrados', (req, res, next) => {
     
-    let sql = 'SELECT * FROM socios ';
+    let sql = 'SELECT * FROM heroku_1b33d1b59be4649.socios ';
 
     conexion.query(sql,  (err, result) => {
         if (err) throw err;
@@ -210,7 +210,7 @@ app.post('/ind', (req, res, next) => {
         
         const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
     
-        conexion.query('INSERT INTO socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
+        conexion.query('INSERT INTO heroku_1b33d1b59be4649.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
         (error, results) => {
                 if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
                     let validacion2  = 'Rellene los campos obligatorios (*)';
