@@ -5,7 +5,7 @@ const hbs = require('hbs');
 const mysql = require('mysql2');
 const nodemailer = require('nodemailer');
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 8080;
 
 
 
@@ -218,6 +218,11 @@ app.post('/ind', (req, res, next) => {
                     validacion2
                 })
             }else{
+
+
+
+
+                
                 async function envioMail2(){
                     let transporter2 = nodemailer.createTransport({
                         host: 'smtp.gmail.com',
