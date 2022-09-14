@@ -30,7 +30,7 @@ const conexion = mysql.createConnection({
 
 
 
-
+ 
 
 //Configurar Middelwares
 app.use(express.json());
@@ -67,7 +67,7 @@ app.get('/socios', (req, res, next) => {
 
 app.get('/registrados', (req, res, next) => {
     
-    let sql = 'SELECT * FROM avphvwb1a357v6ud.socios ';
+    let sql = 'SELECT * FROM in7v2p9gh76lvzf1.socios ';
 
     conexion.query(sql,  (err, result) => {
         if (err) throw err;
@@ -214,7 +214,7 @@ app.post('/ind', (req, res, next) => {
         
         const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
     
-        conexion.query('INSERT INTO avphvwb1a357v6ud.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
+        conexion.query('INSERT INTO in7v2p9gh76lvzf1.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
         (error, results) => {
                 if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
                     let validacion2  = 'Rellene los campos obligatorios (*)';
