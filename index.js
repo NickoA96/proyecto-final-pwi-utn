@@ -12,12 +12,12 @@ const PORT = process.env.PORT || 8080;
 
 
 // Conexion a base de Datos
-const conexion = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
-})
+// const conexion = mysql.createConnection({
+//     host: process.env.HOST,
+//     user: process.env.USER,
+//     password: process.env.PASSWORD,
+//     database: process.env.DATABASE
+// })
 
 
 // conexion.connect((err) => {
@@ -67,15 +67,15 @@ app.get('/socios', (req, res, next) => {
 
 app.get('/registrados', (req, res, next) => {
     
-    let sql = 'SELECT * FROM socios ';
+    // let sql = 'SELECT * FROM socios ';
 
-    conexion.query(sql,  (err, result) => {
-        if (err) throw err;
+    // conexion.query(sql,  (err, result) => {
+    //     if (err) throw err;
         res.render('registrados', {
             style: 'stylo.css',
-            result: result,
+            // result: result,
         });
-    });
+    // });
 });
 
 app.get('/cam_fut', (req, res, next) => {
@@ -208,54 +208,54 @@ app.post('/ind', (req, res, next) => {
 
     app.post('/socios', (req, res, next) => {
         
-        const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
+        // const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
     
-        conexion.query('INSERT INTO socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
-        (error, results) => {
-                if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
-                    let validacion2  = 'Rellene los campos obligatorios (*)';
+        // conexion.query('INSERT INTO socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
+        // (error, results) => {
+        //         if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
+        //             let validacion2  = 'Rellene los campos obligatorios (*)';
                     
                 res.render('socios', {
                     style: 'stylo.css',
-                    validacion2
-                })
-            }else{
+    //                 validacion2
+    //             })
+    //         }else{
 
 
 
 
                 
-                async function envioMail2(){
-                    let transporter2 = nodemailer.createTransport({
-                        host: 'smtp.gmail.com',
-                        port: 465,
-                        secure: true,
-                        auth: {
-                            user: process.env.USER_MAIL,
-                            pass: process.env.PASS_MAIL
-                        }
-                    });
+    //             async function envioMail2(){
+    //                 let transporter2 = nodemailer.createTransport({
+    //                     host: 'smtp.gmail.com',
+    //                     port: 465,
+    //                     secure: true,
+    //                     auth: {
+    //                         user: process.env.USER_MAIL,
+    //                         pass: process.env.PASS_MAIL
+    //                     }
+    //                 });
         
-                    let envio= await transporter2.sendMail({
-                        from: process.env.USER_MAIL,
-                        to:`${email}`,
-                        subject: 'Gracias por sumarte a los socios de  BOCA Shop',
-                        html: `Bienvenido y  muchas gracias por sumarte como socio, con lo cual obtendras grandes beneficios. <br>
-                        Gracias por tu interés.<br>
-                        Atte. BOCA Shop.<br>
-                        `
-                    });
+    //                 let envio= await transporter2.sendMail({
+    //                     from: process.env.USER_MAIL,
+    //                     to:`${email}`,
+    //                     subject: 'Gracias por sumarte a los socios de  BOCA Shop',
+    //                     html: `Bienvenido y  muchas gracias por sumarte como socio, con lo cual obtendras grandes beneficios. <br>
+    //                     Gracias por tu interés.<br>
+    //                     Atte. BOCA Shop.<br>
+    //                     `
+    //                 });
 
 
                     
-                let confirmacion2 = 'Socio agregado correctamente..';
-                res.render('socios', {
-                    style: 'stylo.css',
-                    confirmacion2
-                })
-            }
-                envioMail2();
-            }
+    //             let confirmacion2 = 'Socio agregado correctamente..';
+    //             res.render('socios', {
+    //                 style: 'stylo.css',
+    //                 confirmacion2
+    //             })
+    //         }
+    //             envioMail2();
+    //         }
         });
     });
     
