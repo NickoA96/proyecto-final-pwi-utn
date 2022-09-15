@@ -58,4 +58,5 @@ CONSIGNA PROYECTO INTEGRADOR PWI - UTN
 
 
 
-![Captura de pantalla (13)](https://user-images.githubusercontent.com/105244423/190477652-2f82d38d-e9f8-4a72-9d72-4e5929403f8d.png)
+![Captura de pantalla (14)](https://user-images.githubusercontent.com/105244423/190477910-704ffd4d-a782-4b57-a974-25a60d3132e4.png)
+
