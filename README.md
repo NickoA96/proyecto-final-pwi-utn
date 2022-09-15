@@ -34,7 +34,7 @@ Url Deploy: https://proyecto-final-nicolas-alborno.herokuapp.com/
 
 
 Descripcion: En este proyecto el objetivo era  implementar las tecnologias enseñadas a lo largo de la cursada para poder crear una pagina web y realizar el deploy
-de la misma. Mi idea fue realizar una pagina web sobre un e-commerce insipirandome en la venta de indumentaria un club de futbol.
+de la misma. Mi idea fue realizar una pagina web sobre un e-commerce insipirandome en la venta de indumentaria un club de futbol. Mi idea es seguir mejorando la pagina web agregandole en un futuro login, carrito de compras y mas ideas.
 
 
 
