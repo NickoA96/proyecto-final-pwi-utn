@@ -5,6 +5,7 @@ Alumno : Nicolas Albornoz
 Tecnologias utilizadas : HTML, CSS, BOOTSTRAP, JAVASCRIPT, NODE , EXPRESS, NODEMAILER, MYSQL, MYSQ LWORKBENCH , HANDLEBARS.
 Deploy: Heroku 
 Base de Datos : JawsDB MySQL
+Url Deploy: https://proyecto-final-nicolas-alborno.herokuapp.com/
 
 Descripcion: En este proyecto el objetivo era  implementar las tecnologias enseñadas a lo largo de la cursada para poder crear una pagina web y realizar el deploy
 de la misma. Mi idea fue realizar una pagina web sobre un e-commerce insipirandome en la venta de indumentaria un club de futbol.
