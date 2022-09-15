@@ -262,10 +262,6 @@ app.post('/ind', (req, res, next) => {
                 envioMail2();
             }
     
-
-
-
-
         )
     }
     } );
