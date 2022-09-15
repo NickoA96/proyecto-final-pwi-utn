@@ -67,6 +67,7 @@ app.get('/socios', (req, res, next) => {
 
 app.get('/registrados', (req, res, next) => {
     
+
     let sql = 'SELECT * FROM in7v2p9gh76lvzf1.socios ';
 
     conexion.query(sql,  (err, result) => {
@@ -214,8 +215,7 @@ app.post('/ind', (req, res, next) => {
         
         const {nombre, apellido, dni, celular, provincia, ciudad, cp, pais, email} = req.body;
     
-        conexion.query('INSERT INTO in7v2p9gh76lvzf1.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
-        (error, results) => {
+        
                 if (nombre == '' || apellido == '' || dni == '' || celular == ''|| email == '' || provincia == '' || ciudad == '' || cp == '' || pais == ''){ 
                     let validacion2  = 'Rellene los campos obligatorios (*)';
                     
@@ -225,8 +225,9 @@ app.post('/ind', (req, res, next) => {
                 })
             }else{
 
-
-
+                conexion.query('INSERT INTO in7v2p9gh76lvzf1.socios SET ?', {nombre, apellido, dni, celular, email, provincia, ciudad, cp, pais}, 
+                (error, results) => {
+                
 
                 
                 async function envioMail2(){
@@ -260,8 +261,17 @@ app.post('/ind', (req, res, next) => {
             }
                 envioMail2();
             }
-        });
-    });
+    
+
+
+
+
+        )
+    }
+    } );
+    
+    
+
     
     
 
