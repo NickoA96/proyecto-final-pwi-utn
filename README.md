@@ -34,7 +34,7 @@ Url Deploy: https://proyecto-final-nicolas-alborno.herokuapp.com/
 
 
 Descripcion: En este proyecto el objetivo era  implementar las tecnologias enseñadas a lo largo de la cursada para poder crear una pagina web y realizar el deploy
-de la misma. Mi idea fue realizar una pagina web sobre un e-commerce insipirandome en la venta de indumentaria un club de futbol. Mi idea es seguir mejorando la pagina web agregandole en un futuro login, carrito de compras y mas ideas.
+de la misma. Mi idea fue realizar una pagina web sobre un e-commerce inspirandome en la venta de indumentaria un club de futbol. Mi idea es seguir mejorando la pagina web agregandole en un futuro login, carrito de compras y mas ideas.
 
 
 
@@ -46,3 +46,16 @@ de la misma. Mi idea fue realizar una pagina web sobre un e-commerce insipirando
 ![Captura de pantalla (12)](https://user-images.githubusercontent.com/105244423/190457941-aef30283-30f9-4281-9448-29b9145f151d.png)
 
 
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+CONSIGNA PROYECTO INTEGRADOR PWI - UTN  
+
+
+
+![Captura de pantalla (13)](https://user-images.githubusercontent.com/105244423/190477652-2f82d38d-e9f8-4a72-9d72-4e5929403f8d.png)
