@@ -1,4 +1,4 @@
-PROYECTO FINAL PROGRAMACION WEB INICIAL - UTN 
+PROYECTO INTEGRADOR FINAL PROGRAMACION WEB INICIAL - UTN 
 
 PROFESOR : Bernal Pastor 
 
@@ -34,7 +34,7 @@ Url Deploy: https://proyecto-final-nicolas-alborno.herokuapp.com/
 
 
 Descripcion: En este proyecto el objetivo era  implementar las tecnologias enseñadas a lo largo de la cursada para poder crear una pagina web y realizar el deploy
-de la misma. Mi idea fue realizar una pagina web sobre un e-commerce inspirandome en la venta de indumentaria un club de futbol. Mi idea es seguir mejorando la pagina web agregandole en un futuro login, carrito de compras y mas ideas.
+de la misma. Mi idea fue realizar una pagina web sobre un e-commerce inspirandome en la venta de indumentaria un club de futbol. En un futuro voy a  seguir mejorando la pagina web agregandole en un pagina de  login, un  carrito de compras y mas .
 
 
 
